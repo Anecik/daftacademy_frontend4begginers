@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body::before {
+    content: "";
+    background-image: url(6BM_zdjecia/background.svg);
+    background-color: rgb(102, 39, 102);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.page-content {
+    font-family: 'Open Sans', Courier, monospace;
+    color: white;
+    margin-left: 220px;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h2 {
+    font-weight: bold;
+    letter-spacing: 3.8px;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+h2.section-content__header {
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    font-size: 28px;
+    color: #ec008c;
+    text-align: right;
+}
+
+h3 {
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 13px;
+    letter-spacing: 3.5px;
+}
+
+p.section-about__story-desc {
+    letter-spacing: 1.5px;
+}
+
+button {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.6px;
+}
+
+.section-content {
+    min-height: 100vh;
+    padding-top: 7%;
+    padding-right: 5%;
+}
+
+header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 6.7px;
+    font-weight: bold;
+    color: #ec008c;
+    font-family: 'Open Sans', Courier, monospace;
+    line-height: 25px;
+}
+
+footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 3;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section-about__photo {
+    width: 60%;
+    margin-top: 3%;
+}
+
+.section-about__photo img {
+    width: 100%;
+}
+
+.section-about__content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.section-about__content:nth-child(1)  {
+    align-self: flex-end;
+}
+
+.section-about__story {
+    background-color: #25072e;
+    border-bottom: 4px solid #ec008c;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    width: 28%;
+}
+
+
+
+.section-concerts__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.concert {
+    width: 60%;
+}
+
